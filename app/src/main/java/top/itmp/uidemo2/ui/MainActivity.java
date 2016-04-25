@@ -1,9 +1,12 @@
-package top.itmp.uidemo2;
+package top.itmp.uidemo2.ui;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import top.itmp.uidemo2.base.BaseActivity;
 
-public class MainActivity extends AppCompatActivity {
+import top.itmp.uidemo2.R;
+
+
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
