@@ -4,15 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:id="@+id/sliding_pane_layout"
     tools:context=".ui.MainActivity">
 
-    <ListView android:id="@+id/left_pane"
+    <LinearLayout
         android:layout_width="280dp"
-        android:background="@color/colorPrimary"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="?attr/actionBarSize"/>
+    <ListView android:id="@+id/left_pane"
+        android:background="#eeeeeeee"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"/>
-
+    </LinearLayout>
     <android.support.v4.view.ViewPager
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/pager"
