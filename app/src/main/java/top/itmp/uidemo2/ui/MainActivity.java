@@ -41,7 +41,6 @@ public class MainActivity extends BaseActivity {
         mPagerTitleStrip = (PagerTitleStrip)findViewById(R.id.titles);
 
         mPagerEnabledSlidingPaneLayout.setSliderFadeColor(ContextCompat.getColor(this, R.color.translucent));
-        //mPagerEnabledSlidingPaneLayout.
 
         mListView.setAdapter(new SimpleAdapter(this, Dummy.dummyListMap("dummy"), android.R.layout.simple_list_item_1,
                 new String[]{"dummy"}, new int[]{android.R.id.text1}));
