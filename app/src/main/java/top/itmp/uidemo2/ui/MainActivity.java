@@ -56,6 +56,9 @@ public class MainActivity extends BaseActivity {
         colorPagerAdapter.add("Red", Color.RED);
         colorPagerAdapter.add("Green", Color.GREEN);
         colorPagerAdapter.add("Blue", Color.BLUE);
+        colorPagerAdapter.add("Yellow", Color.YELLOW);
+        colorPagerAdapter.add("Cyan", Color.CYAN);
+        colorPagerAdapter.add("Magenta", Color.MAGENTA);
         mViewPager.setAdapter(colorPagerAdapter);
     }
 
