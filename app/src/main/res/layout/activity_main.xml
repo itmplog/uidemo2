@@ -8,8 +8,9 @@
     <!-- android:clipToPadding="true"
     android:fitsSystemWindows="true" -->
     <LinearLayout
-        android:layout_width="280dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginRight="74dp"
         android:orientation="vertical">
 
         <View
