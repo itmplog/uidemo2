@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">OSChina</string>
     <string name="leak_canary_display_activity_label">OSChinaLeaks</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
