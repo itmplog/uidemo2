@@ -16,8 +16,8 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="74dp"
-            android:background="@color/colorPrimary"
-            android:layout_gravity="bottom" />
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary" />
 
         <ListView
             android:id="@+id/left_pane"

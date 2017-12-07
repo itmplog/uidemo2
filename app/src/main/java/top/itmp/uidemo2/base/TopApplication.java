@@ -4,7 +4,6 @@ import android.app.Application;
 import android.content.Context;
 
 import com.squareup.leakcanary.AndroidExcludedRefs;
-import com.squareup.leakcanary.DisplayLeakService;
 import com.squareup.leakcanary.ExcludedRefs;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
@@ -29,14 +28,14 @@ public class TopApplication extends Application {
                 .instanceField("top.itmp.uidemo.ui.MainActivity", "instance")
                 .reason("recyclerView leak")
                 .build();
-        mRefWatcher = LeakCanary.install(this, DisplayLeakService.class, excludedRefs);
+        mRefWatcher = LeakCanary.install(this);
     }
 
-    public static Context getContext(){
+    public static Context getContext() {
         return mContext;
     }
 
-    public static RefWatcher getRefWatcher(Context context){
+    public static RefWatcher getRefWatcher(Context context) {
         TopApplication application = (TopApplication) context.getApplicationContext();
         return application.mRefWatcher;
     }
